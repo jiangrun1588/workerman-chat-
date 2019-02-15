@@ -12,7 +12,7 @@ if(strpos(strtolower(PHP_OS), 'win') === 0)
     exit("start.php not support windows, please use start_for_win.bat\n");
 }
 
-
+//nihiaooooooooooooooooooo
 // 检查扩展
 if(!extension_loaded('pcntl'))
 {
@@ -33,6 +33,8 @@ require_once __DIR__ . '/vendor/autoload.php';
 foreach(glob(__DIR__.'/Applications/*/start*.php') as $start_file)
 {
     require_once $start_file;
+
+
 }
 // 运行所有服务
 Worker::runAll();
