@@ -12,7 +12,7 @@ if(strpos(strtolower(PHP_OS), 'win') === 0)
     exit("start.php not support windows, please use start_for_win.bat\n");
 }
 
-//nihiaooooooooooooooooooo
+//00000000000000000000000
 // 检查扩展
 if(!extension_loaded('pcntl'))
 {
@@ -25,6 +25,7 @@ if(!extension_loaded('posix'))
 }
 
 // 标记是全局启动
+
 define('GLOBAL_START', 1);
 
 require_once __DIR__ . '/vendor/autoload.php';
